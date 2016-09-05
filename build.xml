@@ -31,7 +31,7 @@
 	====================================== -->
 	<target name="build">
 		<echo>Packaging...</echo>
-		<zip destfile="${buildFilename}" basedir="${source}/src" includes="${sf.packageContent}" />
+		<zip destfile="${buildFilename}" basedir="${source}" includes="${sf.packageContent}" />
 	</target>
 
 
