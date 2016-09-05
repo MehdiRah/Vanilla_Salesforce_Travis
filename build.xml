@@ -14,7 +14,7 @@
 	<!-- Build properties
 	====================================== -->
 	<property environment="env" />
-	<property name="path" value="../" />	
+	<property name="path" value="Chanel" />	
 	<property name="source" value="${path}/src"/>
 	<property name="buildFilename" value="projectsrc.zip"/>
 	<property name="buildFilePath" value="${path}/build/${buildFilename}"/>
