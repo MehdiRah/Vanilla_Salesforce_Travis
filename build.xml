@@ -41,8 +41,6 @@
 	<target name="package-and-deploy" depends="build">
 		<!-- <ff:clearschedule username="${env.bamboo_username}" password="${env.bamboo_password}${env.bamboo_securitytoken}" serverurl="${env.bamboo_serverurl}" /> -->
 		<echo>Deploying to Salesforce...</echo>
-		<echo>${env.username}</echo>
-		<echo>${passwordSecurityToken}</echo>
 		<sf:deploy username="${env.username}" password="${env.password}${env.securityToken}" serverurl="${env.serverUrl}" maxPoll="${sf.maxPoll}" pollWaitMillis="${sf.maxWaitMillis}" zipFile="${buildFilename}" checkOnly="${env.checkOnly}" ignoreWarnings="true" rollbackOnError="true" testLevel="${env.testLevel}"/>
 		<!-- <antcall target="run-tests" /> -->
 	</target>
