@@ -18,7 +18,7 @@
 	<property name="source" value="${path}/src"/>
 	<property name="buildFilename" value="projectsrc.zip"/>
 	<property name="buildFilePath" value="${path}/build/${buildFilename}"/>
-	<property name="passwordSecurityToken" value="${env.password}${env.securitytoken}"/>
+	<property name="passwordSecurityToken" value="${env.password}${env.securityToken}"/>
 
 
 	<!-- Salesforce constants
@@ -43,7 +43,7 @@
 		<echo>Deploying to Salesforce...</echo>
 		<echo>${env.username}</echo>
 		<echo>${passwordSecurityToken}</echo>
-		<sf:deploy username="${env.username}" password="${env.password}${env.securitytoken}" serverurl="${env.serverUrl}" maxPoll="${sf.maxPoll}" pollWaitMillis="${sf.maxWaitMillis}" zipFile="${buildFilename}" checkOnly="${env.checkOnly}" ignoreWarnings="true" rollbackOnError="true" testLevel="${env.testLevel}"/>
+		<sf:deploy username="${env.username}" password="${env.password}${env.securityToken}" serverurl="${env.serverUrl}" maxPoll="${sf.maxPoll}" pollWaitMillis="${sf.maxWaitMillis}" zipFile="${buildFilename}" checkOnly="${env.checkOnly}" ignoreWarnings="true" rollbackOnError="true" testLevel="${env.testLevel}"/>
 		<!-- <antcall target="run-tests" /> -->
 	</target>
 
