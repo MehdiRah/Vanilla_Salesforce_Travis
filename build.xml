@@ -18,7 +18,7 @@
 	<property name="source" value="${path}/src"/>
 	<property name="buildFilename" value="projectsrc.zip"/>
 	<property name="buildFilePath" value="${path}/build/${buildFilename}"/>
-	<property name="passwordSecurityToken" value="{env.password}${env.securitytoken}"/>
+	<property name="passwordSecurityToken" value="${env.password}${env.securitytoken}"/>
 
 
 	<!-- Salesforce constants
